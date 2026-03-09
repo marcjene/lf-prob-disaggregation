@@ -68,6 +68,7 @@ For now, the repository provides the core implementation of the diffusion-based 
 
 Install the appropriate PyTorch version first (CPU or CUDA), then the project dependencies.
 
+```
 # Option A — CPU-only
 pip install torch==2.6.0
 
@@ -76,6 +77,8 @@ pip install --index-url https://download.pytorch.org/whl/cu124 torch==2.6.0
 
 # Install project dependencies
 pip install -r requirements.txt
+```
+
 📊 Methodology Overview
 
 The proposed framework performs probabilistic DER disaggregation through four main steps:
@@ -102,12 +105,15 @@ Prediction intervals and point estimates are obtained from empirical quantiles.
 
 If you use this code in your research, please cite:
 
+```
 @inproceedings{jene2026diffusion,
   title={Conditional Diffusion Model for Probabilistic Disaggregation of PV Systems and Heat Pumps},
   author={Jené-Vinuesa, Marc and Kazmi, Hussain and Aragüés-Peñalba, Mònica and Sumper, Andreas},
   booktitle={Power Systems Computation Conference (PSCC)},
   year={2026}
 }
+```
+
 📄 License
 
 The repository will be released under an open-source license once the final version of the paper is published.
