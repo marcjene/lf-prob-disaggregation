@@ -58,11 +58,11 @@ Additional materials will be progressively released to facilitate reproducibilit
 
 The repository will soon contain example notebooks and scripts demonstrating:
 
-training the diffusion model
+* training the diffusion model
 
-generating probabilistic disaggregated profiles
+* generating probabilistic disaggregated profiles
 
-computing deterministic and probabilistic evaluation metrics
+* computing deterministic and probabilistic evaluation metrics
 
 For now, the repository provides the core implementation of the diffusion-based disaggregation model.
 
