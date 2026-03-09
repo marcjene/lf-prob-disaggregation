@@ -52,7 +52,9 @@ Additional materials will be progressively released to facilitate reproducibilit
 └── README.md
 ```
 
-🚀 Getting Started
+---
+
+# 🚀 Getting Started
 
 The repository will soon contain example notebooks and scripts demonstrating:
 
@@ -64,7 +66,9 @@ computing deterministic and probabilistic evaluation metrics
 
 For now, the repository provides the core implementation of the diffusion-based disaggregation model.
 
-⚙️ Installation (Python 3.11)
+---
+
+# ⚙️ Installation (Python 3.11)
 
 Install the appropriate PyTorch version first (CPU or CUDA), then the project dependencies.
 
@@ -79,29 +83,30 @@ pip install --index-url https://download.pytorch.org/whl/cu124 torch==2.6.0
 pip install -r requirements.txt
 ```
 
-📊 Methodology Overview
+---
 
-The proposed framework performs probabilistic DER disaggregation through four main steps:
+# 📊 Methodology Overview
 
-Data preprocessing
-Daily smart-meter and submetered profiles are normalized and transformed into tensors.
+The proposed framework performs **probabilistic DER disaggregation** through four main steps:
 
-Conditional diffusion model
-A multivariate 1D U-Net diffusion model learns the joint distribution of DER profiles conditioned on:
+1. **Data preprocessing**  
+   Daily smart-meter and submetered profiles are normalized and transformed into tensors.
 
-net consumption
+2. **Conditional diffusion model**  
+   A multivariate **1D U-Net diffusion model** learns the joint distribution of DER profiles conditioned on:
+   - net consumption
+   - irradiance
+   - temperature
 
-irradiance
+3. **Stochastic sampling**  
+   Multiple samples are generated through the reverse diffusion process.
 
-temperature
+4. **Probabilistic post-processing**  
+   Prediction intervals and point estimates are obtained from empirical quantiles.
 
-Stochastic sampling
-Multiple samples are generated through the reverse diffusion process.
+---
 
-Probabilistic post-processing
-Prediction intervals and point estimates are obtained from empirical quantiles.
-
-📄 Citation
+# 📄 Citation
 
 If you use this code in your research, please cite:
 
@@ -114,11 +119,15 @@ If you use this code in your research, please cite:
 }
 ```
 
-📄 License
+---
+
+# 📄 License
 
 The repository will be released under an open-source license once the final version of the paper is published.
 
-📢 Contact
+---
+
+# 📢 Contact
 
 For questions or collaborations:
 
