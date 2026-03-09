@@ -1,8 +1,5 @@
 # LF-Prob-Disaggregation
-Probabilistic DER disaggregation from low-frequency smart meter data using conditional diffusion models.
-
-# LF-Prob-Disaggregation
-**Probabilistic DER disaggregation from low-frequency smart meter data using diffusion models**
+**Probabilistic residential PV and HP signals disaggregation from low-frequency smart meter data using diffusion models**
 
 ![Methodology overview](figures/methodology_pscc.png)
 
